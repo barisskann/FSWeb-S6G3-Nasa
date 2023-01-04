@@ -80,7 +80,7 @@ _Not: eğer photo url bir fotoğraf değilse, React applicationında bir video n
 
 - Verilerinin çağırılması tamamlanmadan bileşenlerinin nesne özelliklerine erişmeye çalıştığı bir hatayla karşılaşabilirsin. - bknz. `Cannot read property 'url' of undefined`. Bu, bir nesne olmasını beklerken, props olarak ilettiğin verilerin tanımsız olduğu anlamına gelir. Bunu düzeltmek için state nesnenden veri okuyacak herhangi bir bileşenine basitçe şöyle bir şey ekleyebilirsin:
 
-```js
+```js 
 // Veriler alınırken bir yükleme mesajı görüntüle
 if (!props.photoOfTheDay) return <h3>Yükleniyor...</h3>;
 
